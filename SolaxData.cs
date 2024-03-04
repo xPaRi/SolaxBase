@@ -140,6 +140,9 @@ namespace Solax.SolaxBase
         public SolaxValue BatteryRemainingCapacity => ValueDict[103];
         public SolaxValue PowerNow => new SolaxValue(-1, "BatteryPower", UnitsEnum.W, -ValueDict[47].Value);
 
+        public SolaxValue PV1Power => new SolaxValue(-1, "PV1 Power", UnitsEnum.W, ValueDict[14].Value);
+        public SolaxValue PV2Power => new SolaxValue(-1, "PV2 Power", UnitsEnum.W, ValueDict[15].Value);
+
         /*
 
         "Total Battery Discharge Energy": (
